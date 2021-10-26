@@ -19,7 +19,7 @@ class BitText2 {
 
 class BitText3 {
   public static void main(String[] args) {
-    short num1 = 18;
+    short num1 = 8;
     int result1 = num1 >> 2;
     int result2 = num1 >>> 2;
     System.out.println(result1);
@@ -29,10 +29,19 @@ class BitText3 {
 
 class BitText4 {
   public static void main(String[] args) {
-    short num1 = -18;
+    short num1 = -8;
     int result1 = num1 >> 2;
     int result2 = num1 >>> 2;
     System.out.println(result1);
     System.out.println(result2);
+    /*
+    待修改：
+     -8的原码为: 1000 0000 0000 0000 0000 0000 0000 1000
+     -8的反码为: 1111 1111 1111 1111 1111 1111 1111 0111
+     -8的补码为: 1111 1111 1111 1111 1111 1111 1111 1000
+     无符号右移的补码： 0011 1111 1111 1111 1111 1111 1111 1000
+     无符号右移的反码： 0011 1111 1111 1111 1111 1111 1111 0111
+     无符号右移的原码： 0100 0000 0000 0000 0000 0000 0000 0111
+    */
   }
 }
